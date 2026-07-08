@@ -1,0 +1,7 @@
+# https://zarrah.org
+# Robots.txt — Zarrah Foundation
+
+User-agent: *
+Allow: /
+
+Sitemap: https://zarrah.org/sitemap.xml
