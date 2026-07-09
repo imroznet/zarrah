@@ -77,7 +77,7 @@
   }
 
   .stats {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--space-4);
   }
 
@@ -99,6 +99,16 @@
 
   .downloads {
     grid-template-columns: 1fr;
+  }
+
+  .download-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .download-item .btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .contact-grid {
@@ -132,6 +142,10 @@
     padding: 0 var(--space-4);
   }
 
+  .logo__text {
+    display: none;
+  }
+
   .hero__actions {
     flex-direction: column;
     align-items: center;
@@ -160,7 +174,7 @@
    ------------------------------------------------------------ */
 @media (min-width: 1440px) {
   .container {
-    max-width: 1300px;
+    max-width: 1280px;
   }
 
   .hero {
