@@ -35,10 +35,18 @@ Static website for Zarrah Foundation, a registered nonprofit society in Banglade
 │   │   └── responsive.css  # Responsive breakpoints
 │   ├── js/
 │   │   └── app.js          # Interactive behaviors
-│   ├── images/             # Image assets (placeholder)
-│   ├── icons/              # Favicon & app icons
+│   ├── images/
+│   │   ├── logo/           # logo.svg, logo.png, favicon.ico, apple-touch-icon.png
+│   │   ├── members/        # Member and leadership photos
+│   │   ├── gallery/        # Gallery photos
+│   │   ├── hero/           # Hero and OpenGraph images
+│   │   ├── partners/       # Partner organization logos
+│   │   ├── documents/      # Images used in document sections
+│   │   └── placeholders/   # Temporary fallback images
 │   └── docs/               # Downloadable documents (PDF)
 │
+├── favicon.ico             # Root favicon
+├── apple-touch-icon.png    # Root Apple touch icon
 ├── robots.txt              # Search engine crawl rules
 ├── sitemap.xml             # XML sitemap
 ├── manifest.json           # Web app manifest
@@ -52,15 +60,22 @@ Static website for Zarrah Foundation, a registered nonprofit society in Banglade
 3. Ensure `.html` files are served with `Content-Type: text/html; charset=UTF-8`.
 4. Verify `robots.txt` and `sitemap.xml` are accessible at root.
 
-## Replacing Placeholders
+## Replacing Website Assets
 
-| Placeholder | Location | Instructions |
-|-------------|----------|--------------|
-| Logo mark | All pages (`.logo__mark`) | Replace the circular div/SVG with your logo image |
-| Member photos | `members.html`, `leadership.html` | Replace SVG placeholders in `.profile-card__photo` / `.leadership-card__photo` with `<img>` tags |
-| Documents | `assets/docs/` | Add PDF files: `registration-certificate.pdf`, `memorandum.pdf`, `constitution.pdf`, `subscriber-list.pdf` |
-| Google Map | `contact.html` | Replace `.map-placeholder` div with an embedded Google Maps `<iframe>` |
-| Favicon | All pages `<head>` | Add favicon files to `assets/icons/` and update `<link>` tags |
+Upload and replace website assets in the following locations:
+
+- **Logo**: `assets/images/logo/logo.svg` and `assets/images/logo/logo.png`
+- **Favicon**: `assets/images/logo/favicon.ico` (copied to `/favicon.ico` automatically in repo)
+- **Apple touch icon**: `assets/images/logo/apple-touch-icon.png` (copied to `/apple-touch-icon.png`)
+- **Member photos**: `assets/images/members/`
+- **Gallery photos**: `assets/images/gallery/`
+- **Hero image / OpenGraph image**: `assets/images/hero/`
+- **PDF documents**: `assets/docs/`
+  - `registration-certificate.pdf`
+  - `constitution.pdf`
+  - `annual-report.pdf`
+  - `financial-report.pdf`
+  - `policies.pdf`
 
 ## SEO Checklist
 
